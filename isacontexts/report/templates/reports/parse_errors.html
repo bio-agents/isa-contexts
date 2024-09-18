@@ -1,0 +1,13 @@
+<v-expansion-panel>
+    <v-expansion-panel-header class="primary">
+        <h2 class="white--text">Parse Errors</h2>
+    </v-expansion-panel-header>
+    <v-expansion-panel-content>
+        {% if parse_error | length > 0 %}
+            {%- for vocab in parse_error %}
+                {{ vocab }}
+                {{ parse_error[vocab] }}
+            {% endfor %}
+        {% endif %}
+    </v-expansion-panel-content>
+</v-expansion-panel>

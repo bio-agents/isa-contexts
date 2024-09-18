@@ -1,0 +1,851 @@
+{
+    "name": "ISA context files analysis report",
+    "description": "This reports checks that each schema file has a corresponding context file in each vocabulary. It also checks if all fields are properly covered",
+    "missing_files": {
+        "sio": [
+            "isa_material_attribute_value_sio_context.jsonld"
+        ],
+        "wd": [
+            "isa_material_attribute_value_wd_context.jsonld"
+        ]
+    },
+    "missing_fields": {
+        "sdo": {
+            "source": {
+                "fields": [
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/sdo/isa_source_sdo_context.jsonld"
+            },
+            "protocol": {
+                "fields": [
+                    "name",
+                    "protocolType"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/sdo/isa_protocol_sdo_context.jsonld"
+            },
+            "assay": {
+                "fields": [
+                    "processSequence"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/sdo/isa_assay_sdo_context.jsonld"
+            },
+            "factor_value": {
+                "fields": [
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/sdo/isa_factor_value_sdo_context.jsonld"
+            },
+            "person": {
+                "fields": [
+                    "address",
+                    "affiliation",
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/sdo/isa_person_sdo_context.jsonld"
+            },
+            "material_attribute_value": {
+                "fields": [
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/sdo/isa_material_attribute_value_sdo_context.jsonld"
+            },
+            "factor": {
+                "fields": [
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/sdo/isa_factor_sdo_context.jsonld"
+            },
+            "investigation": {
+                "fields": [
+                    "filename"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/sdo/isa_investigation_sdo_context.jsonld"
+            },
+            "sample": {
+                "fields": [
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/sdo/isa_sample_sdo_context.jsonld"
+            },
+            "process": {
+                "fields": [
+                    "date",
+                    "inputs",
+                    "outputs"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/sdo/isa_process_sdo_context.jsonld"
+            },
+            "process_parameter_value": {
+                "fields": [
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/sdo/isa_process_parameter_value_sdo_context.jsonld"
+            },
+            "material": {
+                "fields": [
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/sdo/isa_material_sdo_context.jsonld"
+            }
+        },
+        "isaterms": {
+            "source": {
+                "fields": [
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/isaterms/isa_source_isaterms_context.jsonld"
+            },
+            "protocol": {
+                "fields": [
+                    "name"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/isaterms/isa_protocol_isaterms_context.jsonld"
+            },
+            "assay": {
+                "fields": [
+                    "processSequence"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/isaterms/isa_assay_isaterms_context.jsonld"
+            },
+            "factor_value": {
+                "fields": [
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/isaterms/isa_factor_value_isaterms_context.jsonld"
+            },
+            "person": {
+                "fields": [
+                    "address",
+                    "affiliation",
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/isaterms/isa_person_isaterms_context.jsonld"
+            },
+            "material_attribute_value": {
+                "fields": [
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/isaterms/isa_material_attribute_value_isaterms_context.jsonld"
+            },
+            "factor": {
+                "fields": [
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/isaterms/isa_factor_isaterms_context.jsonld"
+            },
+            "investigation": {
+                "fields": [
+                    "filename"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/isaterms/isa_investigation_isaterms_context.jsonld"
+            },
+            "sample": {
+                "fields": [
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/isaterms/isa_sample_isaterms_context.jsonld"
+            },
+            "process": {
+                "fields": [
+                    "date",
+                    "inputs",
+                    "outputs"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/isaterms/isa_process_isaterms_context.jsonld"
+            },
+            "process_parameter_value": {
+                "fields": [
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/isaterms/isa_process_parameter_value_isaterms_context.jsonld"
+            },
+            "material": {
+                "fields": [
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/isaterms/isa_material_isaterms_context.jsonld"
+            }
+        },
+        "sio": {
+            "source": {
+                "fields": [
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/sio/isa_source_sio_context.jsonld"
+            },
+            "factor_value": {
+                "fields": [
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/sio/isa_factor_value_sio_context.jsonld"
+            },
+            "person": {
+                "fields": [
+                    "address",
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/sio/isa_person_sio_context.jsonld"
+            },
+            "investigation": {
+                "fields": [
+                    "filename"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/sio/isa_investigation_sio_context.jsonld"
+            },
+            "sample": {
+                "fields": [
+                    "factorValues",
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/sio/isa_sample_sio_context.jsonld"
+            },
+            "process_parameter_value": {
+                "fields": [
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/sio/isa_process_parameter_value_sio_context.jsonld"
+            },
+            "material": {
+                "fields": [
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/sio/isa_material_sio_context.jsonld"
+            },
+            "protocol_parameter": {
+                "fields": [
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/sio/isa_protocol_parameter_sio_context.jsonld"
+            }
+        },
+        "wd": {
+            "source": {
+                "fields": [
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/wd/isa_source_wd_context.jsonld"
+            },
+            "factor_value": {
+                "fields": [
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/wd/isa_factor_value_wd_context.jsonld"
+            },
+            "person": {
+                "fields": [
+                    "address",
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/wd/isa_person_wd_context.jsonld"
+            },
+            "factor": {
+                "fields": [
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/wd/isa_factor_wd_context.jsonld"
+            },
+            "investigation": {
+                "fields": [
+                    "filename"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/wd/isa_investigation_wd_context.jsonld"
+            },
+            "sample": {
+                "fields": [
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/wd/isa_sample_wd_context.jsonld"
+            },
+            "process_parameter_value": {
+                "fields": [
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/wd/isa_process_parameter_value_wd_context.jsonld"
+            },
+            "material": {
+                "fields": [
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/wd/isa_material_wd_context.jsonld"
+            },
+            "protocol_parameter": {
+                "fields": [
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/wd/isa_protocol_parameter_wd_context.jsonld"
+            }
+        },
+        "obo": {
+            "source": {
+                "fields": [
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/obo/isa_source_obo_context.jsonld"
+            },
+            "protocol": {
+                "fields": [
+                    "name",
+                    "protocolType"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/obo/isa_protocol_obo_context.jsonld"
+            },
+            "assay": {
+                "fields": [
+                    "processSequence"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/obo/isa_assay_obo_context.jsonld"
+            },
+            "factor_value": {
+                "fields": [
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/obo/isa_factor_value_obo_context.jsonld"
+            },
+            "person": {
+                "fields": [
+                    "address",
+                    "affiliation",
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/obo/isa_person_obo_context.jsonld"
+            },
+            "material_attribute_value": {
+                "fields": [
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/obo/isa_material_attribute_value_obo_context.jsonld"
+            },
+            "factor": {
+                "fields": [
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/obo/isa_factor_obo_context.jsonld"
+            },
+            "investigation": {
+                "fields": [
+                    "filename"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/obo/isa_investigation_obo_context.jsonld"
+            },
+            "sample": {
+                "fields": [
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/obo/isa_sample_obo_context.jsonld"
+            },
+            "process": {
+                "fields": [
+                    "date",
+                    "inputs",
+                    "outputs"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/obo/isa_process_obo_context.jsonld"
+            },
+            "process_parameter_value": {
+                "fields": [
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/obo/isa_process_parameter_value_obo_context.jsonld"
+            },
+            "material": {
+                "fields": [
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/obo/isa_material_obo_context.jsonld"
+            },
+            "protocol_parameter": {
+                "fields": [
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/obo/isa_protocol_parameter_obo_context.jsonld"
+            }
+        }
+    },
+    "parse_error": {},
+    "empty_fields": {
+        "sdo": {
+            "study": {
+                "fields": [
+                    "unitCategories",
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/sdo/isa_study_sdo_context.jsonld"
+            },
+            "ontology_annotation": {
+                "fields": [
+                    "termAccession"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/sdo/isa_ontology_annotation_sdo_context.jsonld"
+            }
+        },
+        "sio": {
+            "study": {
+                "fields": [
+                    "materials"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/sio/isa_study_sio_context.jsonld"
+            },
+            "assay": {
+                "fields": [
+                    "materials"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/sio/isa_assay_sio_context.jsonld"
+            }
+        },
+        "wd": {
+            "study": {
+                "fields": [
+                    "materials"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/wd/isa_study_wd_context.jsonld"
+            },
+            "assay": {
+                "fields": [
+                    "materials"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/wd/isa_assay_wd_context.jsonld"
+            }
+        },
+        "obo": {
+            "study": {
+                "fields": [
+                    "unitCategories",
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/obo/isa_study_obo_context.jsonld"
+            },
+            "data": {
+                "fields": [
+                    "type"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/obo/isa_data_obo_context.jsonld"
+            }
+        }
+    },
+    "unresolvable_fields": {
+        "sdo": {
+            "source": {
+                "fields": [
+                    "name",
+                    "characteristics"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/sdo/isa_source_sdo_context.jsonld"
+            },
+            "protocol": {
+                "fields": [
+                    "description",
+                    "uri",
+                    "version",
+                    "parameters",
+                    "components",
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/sdo/isa_protocol_sdo_context.jsonld"
+            },
+            "study": {
+                "fields": [
+                    "filename",
+                    "identifier",
+                    "title",
+                    "description",
+                    "submissionDate",
+                    "publicReleaseDate",
+                    "publications",
+                    "people",
+                    "studyDesignDescriptors",
+                    "protocols",
+                    "materials",
+                    "processSequence",
+                    "assays",
+                    "factors",
+                    "characteristicCategories"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/sdo/isa_study_sdo_context.jsonld"
+            },
+            "data": {
+                "fields": [
+                    "name",
+                    "type",
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/sdo/isa_data_sdo_context.jsonld"
+            },
+            "assay": {
+                "fields": [
+                    "filename",
+                    "measurementType",
+                    "technologyType",
+                    "technologyPlatform",
+                    "dataFiles",
+                    "materials",
+                    "characteristicCategories",
+                    "unitCategories",
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/sdo/isa_assay_sdo_context.jsonld"
+            },
+            "factor_value": {
+                "fields": [
+                    "value",
+                    "unit"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/sdo/isa_factor_value_sdo_context.jsonld"
+            },
+            "comment": {
+                "fields": [
+                    "name",
+                    "value"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/sdo/isa_comment_sdo_context.jsonld"
+            },
+            "person": {
+                "fields": [
+                    "lastName",
+                    "firstName",
+                    "midInitials",
+                    "email",
+                    "phone",
+                    "fax",
+                    "roles"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/sdo/isa_person_sdo_context.jsonld"
+            },
+            "ontology_source_reference": {
+                "fields": [
+                    "comments",
+                    "description",
+                    "file",
+                    "name",
+                    "version"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/sdo/isa_ontology_source_reference_sdo_context.jsonld"
+            },
+            "material_attribute_value": {
+                "fields": [
+                    "category",
+                    "value",
+                    "unit"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/sdo/isa_material_attribute_value_sdo_context.jsonld"
+            },
+            "factor": {
+                "fields": [
+                    "factorName",
+                    "factorType"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/sdo/isa_factor_sdo_context.jsonld"
+            },
+            "investigation": {
+                "fields": [
+                    "identifier",
+                    "title",
+                    "description",
+                    "submissionDate",
+                    "publicReleaseDate",
+                    "publications",
+                    "people",
+                    "studies",
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/sdo/isa_investigation_sdo_context.jsonld"
+            },
+            "sample": {
+                "fields": [
+                    "name",
+                    "characteristics",
+                    "factorValues",
+                    "derivesFrom"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/sdo/isa_sample_sdo_context.jsonld"
+            },
+            "organization": {
+                "fields": [
+                    "name"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/sdo/isa_organization_sdo_context.jsonld"
+            },
+            "material_attribute": {
+                "fields": [
+                    "characteristicType"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/sdo/isa_material_attribute_sdo_context.jsonld"
+            },
+            "publication": {
+                "fields": [
+                    "pubMedID",
+                    "doi",
+                    "authorList",
+                    "title",
+                    "status",
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/sdo/isa_publication_sdo_context.jsonld"
+            },
+            "process": {
+                "fields": [
+                    "name",
+                    "executesProtocol",
+                    "parameterValues",
+                    "performer",
+                    "previousProcess",
+                    "nextProcess",
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/sdo/isa_process_sdo_context.jsonld"
+            },
+            "process_parameter_value": {
+                "fields": [
+                    "value",
+                    "unit"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/sdo/isa_process_parameter_value_sdo_context.jsonld"
+            },
+            "material": {
+                "fields": [
+                    "name",
+                    "type",
+                    "characteristics",
+                    "derivesFrom"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/sdo/isa_material_sdo_context.jsonld"
+            },
+            "protocol_parameter": {
+                "fields": [
+                    "parameterName",
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/sdo/isa_protocol_parameter_sdo_context.jsonld"
+            }
+        },
+        "isaterms": {
+            "source": {
+                "fields": [
+                    "name",
+                    "characteristics"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/isaterms/isa_source_isaterms_context.jsonld"
+            },
+            "protocol": {
+                "fields": [
+                    "protocolType",
+                    "description",
+                    "uri",
+                    "version",
+                    "parameters",
+                    "components",
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/isaterms/isa_protocol_isaterms_context.jsonld"
+            },
+            "study": {
+                "fields": [
+                    "filename",
+                    "identifier",
+                    "title",
+                    "description",
+                    "submissionDate",
+                    "publicReleaseDate",
+                    "publications",
+                    "people",
+                    "studyDesignDescriptors",
+                    "protocols",
+                    "materials",
+                    "processSequence",
+                    "assays",
+                    "factors",
+                    "characteristicCategories",
+                    "unitCategories",
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/isaterms/isa_study_isaterms_context.jsonld"
+            },
+            "ontology_annotation": {
+                "fields": [
+                    "annotationValue",
+                    "termSource",
+                    "termAccession",
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/isaterms/isa_ontology_annotation_isaterms_context.jsonld"
+            },
+            "data": {
+                "fields": [
+                    "name",
+                    "type",
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/isaterms/isa_data_isaterms_context.jsonld"
+            },
+            "assay": {
+                "fields": [
+                    "filename",
+                    "measurementType",
+                    "technologyType",
+                    "technologyPlatform",
+                    "dataFiles",
+                    "materials",
+                    "characteristicCategories",
+                    "unitCategories",
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/isaterms/isa_assay_isaterms_context.jsonld"
+            },
+            "factor_value": {
+                "fields": [
+                    "category",
+                    "value",
+                    "unit"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/isaterms/isa_factor_value_isaterms_context.jsonld"
+            },
+            "comment": {
+                "fields": [
+                    "name",
+                    "value"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/isaterms/isa_comment_isaterms_context.jsonld"
+            },
+            "person": {
+                "fields": [
+                    "lastName",
+                    "firstName",
+                    "midInitials",
+                    "email",
+                    "phone",
+                    "fax",
+                    "roles"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/isaterms/isa_person_isaterms_context.jsonld"
+            },
+            "ontology_source_reference": {
+                "fields": [
+                    "comments",
+                    "description",
+                    "file",
+                    "name",
+                    "version"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/isaterms/isa_ontology_source_reference_isaterms_context.jsonld"
+            },
+            "material_attribute_value": {
+                "fields": [
+                    "category",
+                    "value",
+                    "unit"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/isaterms/isa_material_attribute_value_isaterms_context.jsonld"
+            },
+            "factor": {
+                "fields": [
+                    "factorName",
+                    "factorType"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/isaterms/isa_factor_isaterms_context.jsonld"
+            },
+            "investigation": {
+                "fields": [
+                    "identifier",
+                    "title",
+                    "description",
+                    "submissionDate",
+                    "publicReleaseDate",
+                    "ontologySourceReferences",
+                    "publications",
+                    "people",
+                    "studies",
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/isaterms/isa_investigation_isaterms_context.jsonld"
+            },
+            "sample": {
+                "fields": [
+                    "name",
+                    "characteristics",
+                    "factorValues",
+                    "derivesFrom"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/isaterms/isa_sample_isaterms_context.jsonld"
+            },
+            "organization": {
+                "fields": [
+                    "name"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/isaterms/isa_organization_isaterms_context.jsonld"
+            },
+            "material_attribute": {
+                "fields": [
+                    "characteristicType"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/isaterms/isa_material_attribute_isaterms_context.jsonld"
+            },
+            "publication": {
+                "fields": [
+                    "pubMedID",
+                    "doi",
+                    "authorList",
+                    "title",
+                    "status",
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/isaterms/isa_publication_isaterms_context.jsonld"
+            },
+            "process": {
+                "fields": [
+                    "name",
+                    "executesProtocol",
+                    "parameterValues",
+                    "performer",
+                    "previousProcess",
+                    "nextProcess",
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/isaterms/isa_process_isaterms_context.jsonld"
+            },
+            "process_parameter_value": {
+                "fields": [
+                    "category",
+                    "value",
+                    "unit"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/isaterms/isa_process_parameter_value_isaterms_context.jsonld"
+            },
+            "material": {
+                "fields": [
+                    "name",
+                    "type",
+                    "characteristics",
+                    "derivesFrom"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/isaterms/isa_material_isaterms_context.jsonld"
+            },
+            "protocol_parameter": {
+                "fields": [
+                    "parameterName",
+                    "comments"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/isaterms/isa_protocol_parameter_isaterms_context.jsonld"
+            }
+        },
+        "wd": {
+            "person": {
+                "fields": [
+                    "midInitials"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/wd/isa_person_wd_context.jsonld"
+            },
+            "material_attribute": {
+                "fields": [
+                    "characteristicType"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/wd/isa_material_attribute_wd_context.jsonld"
+            },
+            "process_parameter_value": {
+                "fields": [
+                    "value"
+                ],
+                "filepath": "/Users/philippe/Documents/git/isa-contexts/isacontexts/../contexts/wd/isa_process_parameter_value_wd_context.jsonld"
+            }
+        }
+    }
+}

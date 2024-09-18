@@ -1,0 +1,22 @@
+<v-expansion-panel>
+    <v-expansion-panel-header class="primary">
+        <h2 class="white--text">Missing Files</h2>
+    </v-expansion-panel-header>
+    <v-expansion-panel-content class="pt-3">
+        <ul>
+            {%- for vocab in missing_files %}
+            <li>
+                {{ vocab }}:
+                <ul>
+                    {%- for file in missing_files[vocab] %}
+                    <li>
+                        {{ file }}
+                    </li>
+                    {%- endfor %}
+                </ul>
+
+            </li>
+            {% endfor %}
+        </ul>
+    </v-expansion-panel-content>
+</v-expansion-panel>

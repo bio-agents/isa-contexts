@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> {% include 'head.html' %} </head>
+
+<body> {% include 'body.html' %} </body>
+
+<script type="application/javascript">
+    const vuetify = new Vuetify({
+        theme: {
+            themes: {
+                light: {
+                    primary: '#4CAF50',
+                    secondary: '#FC7A4A',
+                    accent: '#8038D1',
+                    error: '#FF5252',
+                    info: '#2196F3',
+                    success: '#7E0038',
+                    warning: '#FFC107'
+                }
+            }
+        }
+    })
+    const my_vue = new Vue({ el: '#app', vuetify: vuetify })
+</script>
+
+</html>

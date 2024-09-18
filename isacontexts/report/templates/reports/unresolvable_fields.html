@@ -1,0 +1,42 @@
+{% if unresolvable_fields.items() |length > 0 %}
+    <v-expansion-panel>
+        <v-expansion-panel-header class="primary">
+            <h2 class="white--text">Unresolvable URLs</h2>
+        </v-expansion-panel-header>
+        <v-expansion-panel-content>
+            <ul class="pt-3">
+                {%- for vocab in unresolvable_fields %}
+                <li>
+                    {{ vocab }}:
+                    <ul>
+                        <v-container fluid>
+                            <v-row>
+                                {%- for file in unresolvable_fields[vocab] %}
+                                <v-col cols="3">
+                                    <v-card style="height:100%">
+                                        <v-card-title class="primary white--text">
+                                            {{ file }} ({{ unresolvable_fields[vocab][file]['fields'] | length}} items)
+                                        </v-card-title>
+                                        <v-card-text class="pt-3">
+                                            File:
+                                            <a href="file:///{{unresolvable_fields[vocab][file]['filepath']}}" target="_blank">
+                                                {{ unresolvable_fields[vocab][file]['filepath'] }}
+                                            </a>
+                                            <ul>
+                                                {%- for field in unresolvable_fields[vocab][file]['fields'] %}
+                                                <li> {{ field }} </li>
+                                                {%- endfor %}
+                                            </ul>
+                                        </v-card-text>
+                                    </v-card>
+                                </v-col>
+                                {% endfor %}
+                            </v-row>
+                        </v-container>
+                    </ul>
+                </li>
+                {% endfor %}
+            </ul>
+        </v-expansion-panel-content>
+    </v-expansion-panel>
+{% endif %}

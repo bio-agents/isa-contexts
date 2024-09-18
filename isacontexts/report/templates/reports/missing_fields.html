@@ -1,0 +1,40 @@
+<v-expansion-panel>
+    <v-expansion-panel-header class="primary">
+        <h2 class="white--text">Missing Fields</h2>
+    </v-expansion-panel-header>
+    <v-expansion-panel-content class="pt-3">
+        <ul>
+            {%- for vocab in missing_fields %}
+            <li>
+                {{ vocab }}:
+                <ul>
+                    <v-container fluid>
+                            <v-row>
+                                {%- for file in missing_fields[vocab] %}
+                                <v-col cols="3">
+                                    <v-card style="height:100%">
+                                        <v-card-title class="primary white--text">
+                                            {{ file }} ({{ missing_fields[vocab][file]['fields'] | length}} items)
+                                        </v-card-title>
+                                        <v-card-text class="pt-3">
+                                            File:
+                                            <a href="file:///{{missing_fields[vocab][file]['filepath']}}" target="_blank">
+                                                {{ missing_fields[vocab][file]['filepath'] }}
+                                            </a>
+                                            <ul>
+                                                {%- for field in missing_fields[vocab][file]['fields'] %}
+                                                <li> {{ field }} </li>
+                                                {%- endfor %}
+                                            </ul>
+                                        </v-card-text>
+                                    </v-card>
+                                </v-col>
+                                {% endfor %}
+                            </v-row>
+                        </v-container>
+                </ul>
+            </li>
+            {% endfor %}
+        </ul>
+    </v-expansion-panel-content>
+</v-expansion-panel>
