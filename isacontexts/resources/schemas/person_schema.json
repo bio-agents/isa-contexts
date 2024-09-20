@@ -1,34 +1,3 @@
-{
-    "id": "https://raw.githubusercontent.com/ISA-agents/isa-api/master/isaagents/resources/schemas/isa_model_version_1_0_schemas/core/person_schema.json",
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "title" : "ISA Person schema",
-    "name" :  "ISA Person schema",
-    "description" : "JSON-schema representing an ISA model Person Object",
-    "type" : "object",
-    "properties" : {
-        "@id": { "type": "string", "format": "uri-reference" },
-        "@context": { "type": "string", "format": "uri-reference"},
-        "@type" : { "type": "string", "enum": ["Person"] },
-        "lastName" : { "type" : "string"},
-        "firstName" : { "type" : "string"},
-        "midInitials" : { "type" : "string" },
-        "email" : { "type" : "string", "format" : "email"},
-        "phone" : { "type": "string"},
-        "fax" : { "type" : "string" },
-        "address" : { "type" : "string" },
-        "affiliation" : { "type" : "string" },
-        "roles" : {
-            "type" : "array",
-            "items" : {
-                "$ref": "ontology_annotation_schema.json#"
-            }
-        },
-        "comments" : {
-            "type": "array",
-            "items": {
-                 "$ref": "comment_schema.json#"
-            }
-        }
-    },
-    "additionalProperties": false
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7cca00fde3f28ee53e23fb9ea6b8b720eb645e94ee900c3bc0b2320a8dcb602f
+size 1310

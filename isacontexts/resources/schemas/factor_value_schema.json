@@ -1,33 +1,3 @@
-{
-    "id": "https://raw.githubusercontent.com/ISA-agents/isa-api/master/isaagents/resources/schemas/isa_model_version_1_0_schemas/core/factor_value_schema.json",
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "title": "ISA Factor Value schema",
-    "name": "ISA Factor Value schema",
-    "description": "JSON-schema representing an ISA model Factor Value object",
-    "type": "object",
-    "properties": {
-         "@id": { "type": "string", "format": "uri-reference" },
-         "@context": { "type": "string", "format": "uri-reference"},
-         "@type" : { "type": "string", "enum": ["FactorValue"] },
-         "category" : {
-             "$ref": "factor_schema.json#"
-        },
-        "value": {
-            "anyOf" : [
-                { "$ref": "ontology_annotation_schema.json#"},
-                { "type": "string"},
-                { "type": "number"}
-                ]
-        },
-        "unit": {
-            "$ref": "ontology_annotation_schema.json#"
-        },
-        "comments" : {
-            "type": "array",
-            "items": {
-                 "$ref": "comment_schema.json#"
-            }
-        }
-    },
-    "additionalProperties": false
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:c2dc941395b1b03190584dc45fae0f429794f837e886adbea1b5153e61e0ccbf
+size 1186

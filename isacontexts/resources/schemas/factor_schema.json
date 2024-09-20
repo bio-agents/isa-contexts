@@ -1,26 +1,3 @@
-{
-    "id": "https://raw.githubusercontent.com/ISA-agents/isa-api/master/isaagents/resources/schemas/isa_model_version_1_0_schemas/core/factor_schema.json",
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "title": "ISA Factor schema",
-    "name": "ISA Factor schema",
-    "description": "JSON-schema representing an ISA model Factor object",
-    "type": "object",
-    "properties": {
-        "@id": { "type": "string", "format": "uri-reference" },
-        "@context": { "type": "string", "format": "uri-reference"},
-        "@type" : { "type": "string", "enum": ["Factor"] },
-        "factorName": {
-            "type": "string"
-        },
-        "factorType": {
-            "$ref": "ontology_annotation_schema.json#"
-        },
-        "comments" : {
-            "type": "array",
-            "items": {
-                 "$ref": "comment_schema.json#"
-            }
-        }
-    },
-    "additionalProperties": false
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:33b20ca83e29d1320eb0b896fbe255bf3e68ad13e61475973016ecb549a78841
+size 939

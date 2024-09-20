@@ -1,26 +1,3 @@
-{
-    "id": "https://raw.githubusercontent.com/ISA-agents/isa-api/master/isaagents/resources/schemas/isa_model_version_1_0_schemas/core/source_schema.json",
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "title" : "ISA Source schema",
-    "name" : "ISA Source schema",
-    "description" : "JSON-schema representing an ISA model Source object (Sources are considered as the starting biological material used in a study)",
-      "properties" : {
-        "@id": { "type": "string", "format": "uri-reference" },
-        "@context": { "type": "string", "format": "uri-reference" },
-        "@type" : { "type": "string", "enum": ["Source"] },
-        "name" : { "type" : "string" },
-        "characteristics" : {
-            "type" : "array",
-            "items" :  {
-                "$ref": "material_attribute_value_schema.json#"
-                }
-        },
-        "comments" : {
-            "type": "array",
-            "items": {
-                 "$ref": "comment_schema.json#"
-            }
-        }
-      },
-    "additionalProperties": false
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:fe5c1fbc1b525e9f3c3266f75a6c1dd2de1b16ab54c441d43ec39cb8bf043a2f
+size 1066

@@ -1,17 +1,3 @@
-{
-    "id": "https://raw.githubusercontent.com/ISA-agents/isa-api/master/isaagents/resources/schemas/isa_model_version_1_0_schemas/core/material_attribute_schema.json",
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "title" : "ISA material attribute schema",
-    "name" : "ISA Material Attribute schema",
-    "description" : "JSON-schema representing a characteristics category (what appears between the brackets in Characteristics[]) in the ISA model",
-    "type" : "object",
-    "properties" : {
-        "@id": { "type": "string", "format": "uri-reference" },
-        "@context": { "type": "string", "format": "uri-reference"},
-        "@type" : { "type": "string", "enum": ["MaterialAttribute"] },
-        "characteristicType": {
-            "$ref": "ontology_annotation_schema.json#"
-        }
-    },
-    "additionalProperties": false
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2d19ec4dba0ff154a11ea137a555f31258c8db468ec62a15be14cf4951c188f5
+size 860

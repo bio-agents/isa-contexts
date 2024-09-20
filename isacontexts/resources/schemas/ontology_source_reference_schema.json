@@ -1,32 +1,3 @@
-{
-    "id": "https://raw.githubusercontent.com/ISA-agents/isa-api/master/isaagents/resources/schemas/isa_model_version_1_0_schemas/core/ontology_source_schema.json",
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "title" : "ISA ontology source reference schema",
-    "name" : "ISA ontology source reference schema",
-    "description" : "JSON-schema representing an ISA model ontology reference object",
-    "type" : "object",
-    "properties" : {
-        "@id": { "type": "string", "format": "uri-reference"},
-        "@context": { "type": "string", "format": "uri-reference"},
-        "@type" : { "type": "string", "enum": ["OntologySourceReference"] },
-        "comments": {
-            "type": "array",
-            "items": {
-                "$ref": "comment_schema.json#"
-            }
-        },
-        "description": {
-            "type": "string"
-        },
-        "file": {
-            "type": "string"
-        },
-        "name": {
-            "type": "string"
-        },
-        "version": {
-            "type": "string"
-        }
-    },
-    "additionalProperties": false
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:02d568526b9bbc48aa6877688f7e748c2a47238de77a52ca722b2b8d285c8d42
+size 1104

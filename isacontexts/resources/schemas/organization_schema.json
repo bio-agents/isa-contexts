@@ -1,17 +1,3 @@
-{
-    "id": "https://raw.githubusercontent.com/ISA-agents/isa-api/master/isaagents/resources/schemas/isa_model_version_1_0_schemas/core/organization_schema.json",
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "title" : "ISA Organization schema",
-    "name" : "ISA Organization schema",
-    "description" : "JSON-schema representing an ISA model organization object",
-    "type" : "object",
-    "properties" : {
-       "@id": { "type": "string", "format": "uri-reference" },
-       "@context": { "type": "string", "format": "uri-reference"},
-       "@type" : { "type": "string", "enum": ["Organization"] },
-       "name" : {
-           "type" : "string"
-       }
-    },
-  "additionalProperties": false
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:149a4d619ede915b57d839722034c2b4ecb8d942ef9fb43c9ece8fa4bd1a9411
+size 723

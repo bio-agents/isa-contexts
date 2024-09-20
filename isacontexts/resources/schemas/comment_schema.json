@@ -1,20 +1,3 @@
-{
-    "id": "https://raw.githubusercontent.com/ISA-agents/isa-api/master/isaagents/resources/schemas/isa_model_version_1_0_schemas/core/comment_schema.json",
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "title": "ISA Comment schema - it corresponds to ISA Comment[] construct",
-    "name" : "ISA Comment schema",
-    "description": "JSON-schema representing an ISA model Comment object",
-    "type": "object",
-    "properties": {
-        "@id": { "type": "string", "format": "uri-reference" },
-        "@context": { "type": "string", "format": "uri-reference"},
-        "@type" : { "type": "string", "enum": ["Comment"] },
-        "name": {
-            "type": "string"
-        },
-        "value": {
-            "type": "string"
-        }
-    },
-    "additionalProperties": false
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0374ed5462e1676f721d7da69370e520dc54d3250594cc03dc10acccef861352
+size 803

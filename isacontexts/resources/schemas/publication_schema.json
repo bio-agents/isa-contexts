@@ -1,27 +1,3 @@
-{
-    "id": "https://raw.githubusercontent.com/ISA-agents/isa-api/master/isaagents/resources/schemas/isa_model_version_1_0_schemas/core/publication_schema.json",
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "title" : "ISA Publication schema",
-    "name" : "ISA Publication schema",
-    "description" : "JSON-schema representing an ISA model Publication object",
-    "type" : "object",
-    "properties" : {
-        "@id": { "type": "string", "format": "uri-reference" },
-        "@context": { "type": "string", "format": "uri-reference"},
-        "@type" : { "type": "string", "enum": ["Publication"] },
-        "pubMedID" : { "type" : "string" },
-        "doi" : { "type" : "string"},
-        "authorList" : { "type" : "string" },
-        "title" : { "type" : "string" },
-        "status" : {
-            "$ref": "ontology_annotation_schema.json#"
-        },
-        "comments" : {
-            "type": "array",
-            "items": {
-                 "$ref": "comment_schema.json#"
-            }
-        }
-    },
-    "additionalProperties": false
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:057d926dbcb198ff3786250fb0de1d682de68862609fa07f1edf1aa17a135aa2
+size 1071
